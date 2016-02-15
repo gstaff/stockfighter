@@ -7,7 +7,7 @@
 - The Stockfighter API for deleting orders returns the account owning an order upon an unauthorized request.
 - Using this to scan the first 500 orders I was able to assemble a set of 100 accounts trading the stock of interest.
 - The Stockfighter executions websocket feed does not apply authorization.
-- Spinning up a connection for each of the accounts and gathering a list of all executions for 5 minutes provided a dataset for finding the suspect.
+- Spinning up a connection for each of the accounts and gathering a list of all executions for 10 minutes provided a dataset for finding the suspect.
 - Code can be found in `making_amends.py`
 - Data can be found in `accounts.json`, `accounts.txt`, and the `executions` directory
 
