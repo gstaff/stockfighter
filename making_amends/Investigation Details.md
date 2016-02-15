@@ -8,8 +8,8 @@
 - Using this to scan the first 500 orders I was able to assemble a set of 100 accounts trading the stock of interest.
 - The Stockfighter executions websocket feed does not apply authorization.
 - Spinning up a connection for each of the accounts and gathering a list of all executions for 5 minutes provided a dataset for finding the suspect.
-- Code can be found in making_amends.py
-- Data can be found in accounts.json, accounts.txt, and the excutions directory
+- Code can be found in `making_amends.py`
+- Data can be found in `accounts.json`, `accounts.txt`, and the `executions` directory
 
 ### Analyzing the Data
 - With a history of executions for all accounts the next step was to classify the accounts.
@@ -27,8 +27,8 @@
       - The P&L for this account was 37% higher than the next highest account.
       - The total trading volume for this account was only 83% of the next *lowest* institutional account.
       - The combination of these factors is anomalous as P&L correlates strongly with trading volume for market making strategies (R^2 of 0.71 among the 25 smaller accounts here).
-- Code can be found in analysis.py
-- Data can be found in suspects.csv
+- Code can be found in `analysis.py`
+- Data can be found in `suspects.csv`
 
 ### Conclusion
 - The combination of high P&L and low trading volume for RMB73022728 is enough of an outlier to justify an investigation for insider trading.
